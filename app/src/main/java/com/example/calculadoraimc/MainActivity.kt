@@ -13,6 +13,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -77,10 +79,17 @@ fun ImcScreen(modifier: Modifier = Modifier){
                 Column(
                     modifier = Modifier.fillMaxWidth()
                         .padding(horizontal = 32.dp)
-                    )
-                 {
+                    ) {
+                    Card(
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(300.dp),
+                        colors = CardDefaults.cardColors(
+                            containerColor = Color(0xFFA29898)
+                        )
 
-                 }
+                    ) { }
+                }
             }
         }
 //                    -- card resultado --
