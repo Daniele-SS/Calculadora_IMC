@@ -193,8 +193,7 @@ fun ImcScreen(modifier: Modifier = Modifier) {
                         .padding(24.dp)
                 ) {
                     Text(
-                        text = String.format(
-                            Locale("pt", "BR"),"%.2f", imc),
+                        text = String.format(Locale.US,"%.2f", imc),
                         fontWeight = FontWeight.Bold,
                         color = Color.White,
                         fontSize = 28.sp
